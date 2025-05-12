@@ -1,0 +1,41 @@
+<!-- <main class="bg-sky-950">
+    <div #banner class="flex items-center justify-center flex-col min-w-full min-h-full relative" 
+      (mousemove)="onMouseEvent($event)" (mouseout)="onMouseOut()"
+    >
+      <app-hero></app-hero>
+      <app-hero></app-hero>
+      <app-hero></app-hero>
+      <app-hero></app-hero>
+      <app-hero></app-hero>
+      <app-hero></app-hero>
+      <canvas #canvas class="absolute bg-transparent border w-full h-full opacity-50" id="canvas"></canvas>
+    </div>
+</main>  -->
+
+<!-- <div #banner class="relative bg-sky-950 w-full h-full flex justify-center items-center flex-col" (mousemove)="onMouseEvent($event)" (mouseout)="onMouseOut()">
+  <app-navigation></app-navigation>
+  <app-hero></app-hero>
+  <canvas #canvas class="absolute bg-transparent w-full h-full opacity-50 pointer-events-none"></canvas>
+</div> -->
+
+<!-- <div class="flex justify-between items-center w-full relative">
+  <div class="bg-amber-500"><h1>Logo</h1></div>
+  <div class="bg-red-500"><h1>Title</h1></div>
+</div> -->
+
+<main class="bg-sky-950">
+  <div #banner class="relative w-full h-full" (mousemove)="onMouseEvent($event)" (mouseout)="onMouseOut()">
+    <!-- <div class="w-full h-screen">
+<h5>VeliaFinoanaPatrick</h5>
+    <div>
+      <h1 class="text-amber-500 text-2xl">Hello World</h1>
+      <h1>I'm VELIA Finoana Patrick</h1>
+    </div>
+    <p>And this is my story</p>
+    <button class="p-2 rounded-full bg-blue-500 text-white">Download CV</button>
+    </div> -->
+    <app-navigation></app-navigation>
+    <app-hero></app-hero>
+    <canvas #canvas class="absolute bg-transparent top-0 left-0 w-full h-full pointer-events-none"></canvas>
+  </div>
+</main>
