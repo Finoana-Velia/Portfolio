@@ -27,6 +27,15 @@
               }
             ],
             "styles": [
+              "public/fontawesome-6.7.2/css/all.css",
+              "public/fontawesome-6.7.2/css/brands.css",
+              "public/fontawesome-6.7.2/css/fontawesome.css",
+              "public/fontawesome-6.7.2/css/regular.css",
+              "public/fontawesome-6.7.2/css/solid.css",
+              "public/fontawesome-6.7.2/css/svg-with-js.css",
+              "public/fontawesome-6.7.2/css/v4-font-face.css",
+              "public/fontawesome-6.7.2/css/v4-shims.css",
+              "public/fontawesome-6.7.2/css/v5-font-face.css",
               "src/styles.css"
             ],
             "scripts": []

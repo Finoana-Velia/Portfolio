@@ -1,1 +1,14 @@
-<p>timeline works!</p>
+<section class="min-h-screen">
+    <div class="w-full">
+        <h1 class="text-white font-bold text-4xl">Timeline</h1>
+        <swiper-container loop="false" slides-per-view="1" class="w-full px-2">
+            <swiper-slide *ngFor="let event of events">
+                <div class="w-full bg-white p-5 min-h-[350px]">
+                    <h5 class=" text-2xl font-bold">{{event.diploma}}</h5>
+                    <p>{{event.date}}</p>
+                    <h5 class="text-xl font-bold">{{event.department}}</h5>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+</section>

@@ -1,3 +1,11 @@
 #canvas {
     pointer-events: none;
 }
+
+.gradient {
+    background : linear-gradient(180deg,transparent,#000);
+}
+
+.gradient-reverse {
+    background : linear-gradient(180deg,#000,transparent);
+}

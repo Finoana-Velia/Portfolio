@@ -4,13 +4,14 @@ import { HeroComponent } from '../hero/hero.component';
 import { SkillsComponent } from '../skills/skills.component';
 import { TimelineComponent } from '../timeline/timeline.component';
 import { NavigationComponent } from '../../navigation/navigation.component';
+import { ProjectsComponent } from '../projects/projects.component';
 
 @Component({
   selector: 'app-main',
   imports: [
-    NavigationComponent,
     HeroComponent,
     SkillsComponent,
+    ProjectsComponent,
     TimelineComponent
   ],
   templateUrl: './main.component.html',

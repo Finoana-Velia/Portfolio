@@ -24,18 +24,13 @@
 </div> -->
 
 <main class="bg-sky-950">
-  <div #banner class="relative w-full h-full" (mousemove)="onMouseEvent($event)" (mouseout)="onMouseOut()">
-    <!-- <div class="w-full h-screen">
-<h5>VeliaFinoanaPatrick</h5>
-    <div>
-      <h1 class="text-amber-500 text-2xl">Hello World</h1>
-      <h1>I'm VELIA Finoana Patrick</h1>
-    </div>
-    <p>And this is my story</p>
-    <button class="p-2 rounded-full bg-blue-500 text-white">Download CV</button>
-    </div> -->
-    <app-navigation></app-navigation>
+  <div #banner class="relative w-screen h-full" (mousemove)="onMouseEvent($event)" (mouseout)="onMouseOut()">
     <app-hero></app-hero>
+    <app-skills></app-skills>
+    <div class="relative z-50 w-full h-11 bg-white gradient"></div>
+    <app-projects></app-projects>
+    <div class="relative z-50 w-full h-11 bg-white gradient-reverse"></div>
+    <app-timeline></app-timeline>
     <canvas #canvas class="absolute bg-transparent top-0 left-0 w-full h-full pointer-events-none"></canvas>
   </div>
 </main>
