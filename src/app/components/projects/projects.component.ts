@@ -11,7 +11,7 @@ export class ProjectsComponent {
   projects = [
     {
       title : "Lisiniarivo Clothing and store",
-      description : "C'était ma première contrat en freelance, la société Lisiniarivo Clothing and store m'a proposer de développer une application permettant de gérer leurs articles leurs livreurs et leurs commande mais aussi avec d'autres fonctionnalités supplémentaires comme la gestion de l'authentification et sécurité, l'affichage et la consultation des commandes à partir d'un calendri et enfin l'automatisation des intégration et le déploiement",
+      description : "C'était mon premier contrat en freelance, la société Lisiniarivo Clothing and store m'a proposer de développer une application permettant de gérer leurs articles, leurs livreurs et leurs commandes mais aussi avec d'autres fonctionnalités supplémentaires comme la gestion de l'authentification et sécurité, l'affichage et la consultation des commandes à partir d'un calendri et enfin l'automatisation des intégration et le déploiement",
       technologies : [
         {
           title : "Spring boot",

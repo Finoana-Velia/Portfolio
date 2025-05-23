@@ -8,7 +8,7 @@ interface event {
 }
 @Component({
   selector: 'app-timeline',
-  imports: [NgForOf],
+  imports: [],
   templateUrl: './timeline.component.html',
   styleUrl: './timeline.component.css',
   schemas : [CUSTOM_ELEMENTS_SCHEMA]
