@@ -8,3 +8,63 @@ canvas {
 a,button {
     cursor : pointer;
 }
+
+.rtl {
+    animation : rtl 3s forwards;
+}
+
+.ltr {
+    animation : ltr 3s forwards;
+}
+
+.ttb {
+    animation : ttb 3s forwards;
+}
+
+.btt {
+    animation : btt 3s forwards;
+}
+
+@keyframes rtl {
+    0% {
+        transform : translateX(-10px);
+        opacity : 0;
+    }
+    100% {
+        transform : translateX(0);
+        opacity : 1;
+    }
+}
+
+@keyframes ltr {
+    0%{
+        transform : translateX(10px);
+        opacity : 0
+    }
+    100% {
+        transform : translateX(0);
+        opacity : 1;
+    }
+}
+
+@keyFrames ttb {
+    0%{
+        transform : translateY(10px);
+        opacity : 0
+    }
+    100% {
+        transform : translateY(0);
+        opacity : 1;
+    }
+}
+
+@keyFrames btt {
+    0%{
+        transform : translateY(-10px);
+        opacity : 0
+    }
+    100% {
+        transform : translateY(0);
+        opacity : 1;
+    }
+}
