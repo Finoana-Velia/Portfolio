@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -6,8 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit{
 
+  projectSelected : any = null;
+  
   projects = [
     {
       title : "Lisiniarivo Clothing and store",
@@ -40,32 +42,32 @@ export class ProjectsComponent {
       ]
     },
 
-    {
-      title : "ORA",
-      description : "ORA était à la base un dispositif destiné à enregistrer les entrées et sorties des employés d'une organisation. C'est par la suite que l'entreprise MDG-IT à decider de l'améliorer en lui intégran une interface administrateur mais aussi d'avoir le contrôle sur les activités professionnelles de la totalité des salariés voir même de plusieurs sociétés en même temps",
-      technologies : [
-        {
-          title : "Spring boot",
-          logo : "Logos/spring-boot-logo_full.png",
-        },
-        {
-          title : "Angular",
-          logo : "Logos/angular_icon-logo.png",
-        },
-        {
-          title : "Bootstrap",
-          logo : "Logos/Bootstrap_logo.svg.png",
-        },
-        {
-          title : "PostgreSQL",
-          logo : "Logos/Postgresql_elephant.svg.png",
-        },
-        {
-          title : "Git",
-          logo : "Logos/Git_icon.svg.png",
-        },
-      ]
-    },
+    // {
+    //   title : "ORA",
+    //   description : "ORA était à la base un dispositif destiné à enregistrer les entrées et sorties des employés d'une organisation. C'est par la suite que l'entreprise MDG-IT à decider de l'améliorer en lui intégran une interface administrateur mais aussi d'avoir le contrôle sur les activités professionnelles de la totalité des salariés voir même de plusieurs sociétés en même temps",
+    //   technologies : [
+    //     {
+    //       title : "Spring boot",
+    //       logo : "Logos/spring-boot-logo_full.png",
+    //     },
+    //     {
+    //       title : "Angular",
+    //       logo : "Logos/angular_icon-logo.png",
+    //     },
+    //     {
+    //       title : "Bootstrap",
+    //       logo : "Logos/Bootstrap_logo.svg.png",
+    //     },
+    //     {
+    //       title : "PostgreSQL",
+    //       logo : "Logos/Postgresql_elephant.svg.png",
+    //     },
+    //     {
+    //       title : "Git",
+    //       logo : "Logos/Git_icon.svg.png",
+    //     },
+    //   ]
+    // },
 
     {
       title : "RestFood and Bakery",
@@ -125,5 +127,13 @@ export class ProjectsComponent {
       ]
     },
   ]
+
+  ngOnInit(): void {
+    this.projectSelected = this.projects[0];
+  }
+
+  selectProject(project : any) {
+    this.projectSelected = project;
+  }
 
 }
