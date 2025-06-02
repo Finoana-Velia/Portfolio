@@ -9,62 +9,55 @@ a,button {
     cursor : pointer;
 }
 
-.rtl {
-    animation : rtl 3s forwards;
-}
 
-.ltr {
-    animation : ltr 3s forwards;
-}
+@theme {
+    --animate-rtl : rtl 1s forwards;
+    --animate-ltr : ltr 1s forwards;
+    --animate-btt : btt 1s forwards;
+    --animate-ttb : ttb 1s forwards;
 
-.ttb {
-    animation : ttb 3s forwards;
-}
+    @keyframes rtl {
+        0% {
+            transform : translateX(-10px);
+            opacity : 0;
+        }
+        100% {
+            transform : translateX(0);
+            opacity : 1;
+        }
+    }
 
-.btt {
-    animation : btt 3s forwards;
-}
+    @keyframes ltr {
+        0% {
+            transform : translateX(10px);
+            opacity : 0;
+        }
+        100% {
+            transform : translateX(0);
+            opacity : 1;
+        }
+    }
 
-@keyframes rtl {
-    0% {
-        transform : translateX(-10px);
-        opacity : 0;
+    @keyframes ttb {
+        0% {
+            transform : translateY(10px);
+            opacity : 0;
+        }
+        100% {
+            transform : translateY(0);
+            opacity : 1;
+        }
     }
-    100% {
-        transform : translateX(0);
-        opacity : 1;
-    }
-}
 
-@keyframes ltr {
-    0%{
-        transform : translateX(10px);
-        opacity : 0
+    @keyframes btt {
+        0% {
+            transform : translateY(-10px);
+            opacity : 0;
+        }
+        100% {
+            transform : translateY(0);
+            opacity : 1;
+        }
     }
-    100% {
-        transform : translateX(0);
-        opacity : 1;
-    }
-}
 
-@keyFrames ttb {
-    0%{
-        transform : translateY(10px);
-        opacity : 0
-    }
-    100% {
-        transform : translateY(0);
-        opacity : 1;
-    }
-}
-
-@keyFrames btt {
-    0%{
-        transform : translateY(-10px);
-        opacity : 0
-    }
-    100% {
-        transform : translateY(0);
-        opacity : 1;
-    }
 }

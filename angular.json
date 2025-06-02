@@ -36,6 +36,7 @@
               "public/fontawesome-6.7.2/css/v4-font-face.css",
               "public/fontawesome-6.7.2/css/v4-shims.css",
               "public/fontawesome-6.7.2/css/v5-font-face.css",
+              "node_modules/aos/dist/aos.css",
               "src/styles.css"
             ],
             "scripts": []

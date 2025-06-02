@@ -1,6 +1,8 @@
 import { NgForOf } from '@angular/common';
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { SwiperOptions } from 'swiper/types';
+import { AfterViewInit, Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, OnInit, ViewChild } from '@angular/core';
+
+import * as AOS from 'aos';
+
 
 @Component({
   selector: 'app-skills',
@@ -9,7 +11,45 @@ import { SwiperOptions } from 'swiper/types';
   styleUrl: './skills.component.css',
   schemas : [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class SkillsComponent {
+export class SkillsComponent implements AfterViewInit,OnInit{
+  
+
+  @ViewChild('swiperEl', { static: false }) swiperEl?: ElementRef;
+  
+  ngOnInit(): void {
+    AOS.init();
+  }
+
+  ngAfterViewInit(): void {
+    const swiper = this.swiperEl?.nativeElement;
+
+    Object.assign(swiper, {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1280: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+      },
+      navigation: true,
+      loop: false,
+    });
+
+    swiper.initialize();
+  }
 
   techs = [
     {

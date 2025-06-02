@@ -1,5 +1,7 @@
 import { NgForOf } from '@angular/common';
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { AfterViewInit, Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
+
+import * as AOS from 'aos';
 
 interface event {
   date : string,
@@ -13,7 +15,14 @@ interface event {
   styleUrl: './timeline.component.css',
   schemas : [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class TimelineComponent {
+export class TimelineComponent implements AfterViewInit,OnInit{
+
+  ngOnInit(): void {
+    AOS.init();
+  }
+  ngAfterViewInit(): void {
+    AOS.refresh();
+  }
 
   events : event[] = [
     {

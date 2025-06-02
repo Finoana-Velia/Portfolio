@@ -21,15 +21,28 @@
 </section> -->
 
 <section class="flex justify-center items-center max-h-screen px-10 pt-5 mb-10" id="skills">
-    <div class="relative bg-sky-900 p-5 rounded-2xl z-50 w-full text-center">
+    <div class="relative bg-sky-900 p-5 rounded-2xl z-50 w-full text-center" data-aos="fade-up">
         <h2 class="text-white text-3xl font-bold">Technologies</h2>
         <!-- <p class="text-white">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora aspernatur ex possimus fugiat accusantium assumenda, obcaecati quos illum saepe non deserunt similique vitae voluptatibus asperiores ducimus amet delectus veritatis. Nostrum!
         </p> -->
-        <swiper-container 
+        <!-- <swiper-container 
             loop="false" 
             slides-per-view="4"
             navigation="true" 
+            class="w-full px-2 py-10"
+            >
+            <swiper-slide *ngFor="let tech of techs">
+                <div class="flex flex-col justify-center items-center gap-5">
+                    <div class="w-30 h-30">
+                        <img [src]="tech.logo" [alt]="tech.logo" class="w-full h-full object-cover object-center">
+                    </div>
+                    <p class="text-white font-semibold text-xl">{{tech.title}}</p>
+                </div>
+            </swiper-slide>
+        </swiper-container> -->
+        <swiper-container 
+            #swiperEl 
             class="w-full px-2 py-10"
             >
             <swiper-slide *ngFor="let tech of techs">

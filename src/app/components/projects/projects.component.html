@@ -48,14 +48,18 @@
                     <p>Gasy tube</p>
                 </div> -->
             @for (project of projects; track $index) {
-                <div class="flex justify-center items-center w-[300px] h-[150px] rounded-xl cursor-pointer" (click)="selectProject(project)">
+                <div 
+                    class="flex justify-center items-center w-[300px] h-[150px] rounded-xl cursor-pointer" 
+                    (click)="selectProject(project)"
+                    data-aos="fade-up"
+                >
                     <!-- <p>{{project.title}}</p> -->
                     <img [src]="project.background" [alt]="project.background" class="w-full h-full object-center object-cover rounded-xl">
                 </div>
             }
         </div>
         @if(projectSelected) {
-            <div class="relative flex w-full bg-sky-950 rounded-xl gap-5 p-5 my-5">
+            <div class="relative flex w-full bg-sky-950 rounded-xl gap-5 p-5 my-5" data-aos="fade-left">
                 <div class="flex justify-center items-center w-[300px] rounded-xl">
                     <!-- <p>{{projectSelected.title}}</p> -->
                     <img [src]="projectSelected.monitor" [alt]="projectSelected.monitor">

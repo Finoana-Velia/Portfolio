@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-projects',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
-export class ProjectsComponent implements OnInit{
+export class ProjectsComponent implements OnInit,AfterViewInit{
+
 
   projectSelected : any = null;
   
@@ -109,6 +111,10 @@ export class ProjectsComponent implements OnInit{
 
   ngOnInit(): void {
     this.projectSelected = this.projects[0];
+  }
+
+  ngAfterViewInit(): void {
+    AOS.refresh();
   }
 
   selectProject(project : any) {
