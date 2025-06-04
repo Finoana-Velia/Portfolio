@@ -52,16 +52,15 @@ export class MainComponent implements AfterViewInit{
 
     const arrayColors = [
       '#ec4889','#f43f5e','#a855f7','#d946ef','#6366f1',
-      '#8b5cf6','#0ea5e9','#3b82f6','#14b8a6','#06b6d4',
-      '#22c55e','#10b981','#eab308','#94cc16','#f97316',
-      '#f59e0b','#78716c','#ef4444','#71717a','#737373',
-      '#65748b','#6b7280']
-    for(let index = 0; index < 300 ; index ++) {
+      '#8b5cf6',,'#14b8a6','#06b6d4','#22c55e','#10b981',
+      '#eab308','#94cc16','#f97316','#f59e0b','#78716c',
+      '#ef4444','#71717a','#737373','#65748b','#6b7280']
+    for(let index = 0; index < 250 ; index ++) {
       this.dots.push({
         x : Math.floor(Math.random() * this.canvas.width),
         y : Math.floor(Math.random() * this.canvas.height),
         size : Math.random() * 3 + 5,
-        color : arrayColors[Math.floor(Math.random() * 22)]
+        color : arrayColors[Math.floor(Math.random() * 20)]
       });
     }
     this.drawPoints();

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-contact',
@@ -6,6 +8,15 @@ import { Component } from '@angular/core';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit,AfterViewInit{
+  mail = "veliafinoanapatrick@gmail.com";
+
+  ngOnInit(): void {
+    AOS.init();
+  }
+  ngAfterViewInit(): void {
+    AOS.refresh();
+  }
+
 
 }

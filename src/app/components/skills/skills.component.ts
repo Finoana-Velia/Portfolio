@@ -45,10 +45,15 @@ export class SkillsComponent implements AfterViewInit,OnInit{
         },
       },
       navigation: true,
-      loop: false,
+      loop: true,
+      autoplay : {
+          delay: 2500,
+          disableOnInteraction: false,
+      }
     });
 
     swiper.initialize();
+    AOS.refresh();
   }
 
   techs = [
