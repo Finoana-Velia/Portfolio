@@ -50,6 +50,7 @@ export class SkillsComponent implements AfterViewInit,OnInit{
     });
 
     swiper.initialize();
+    AOS.refresh();
   }
 
   techs = [

@@ -107,7 +107,10 @@ export class ProjectsComponent implements OnInit,AfterViewInit{
         },
       ]
     },
-  ]
+  ];
+
+  showTooltip : boolean = false;
+
 
   ngOnInit(): void {
     this.projectSelected = this.projects[0];
@@ -120,5 +123,16 @@ export class ProjectsComponent implements OnInit,AfterViewInit{
   selectProject(project : any) {
     this.projectSelected = project;
   }
+
+  checkOverFlow(event : MouseEvent) {
+    const target = event.target as HTMLElement;
+    this.showTooltip = target.scrollWidth > target.clientWidth;
+  }
+
+  hideToolTip() {
+    this.showTooltip = false;
+  }
+
+
 
 }

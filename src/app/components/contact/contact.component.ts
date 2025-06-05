@@ -8,7 +8,9 @@ import * as AOS from 'aos';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
+
 export class ContactComponent implements AfterViewInit,OnInit{
+
 
   mail = "veliafinoanapatrick@gmail.com";
 
