@@ -59,18 +59,18 @@
             }
         </div>
         @if(projectSelected) {
-            <div class="relative flex w-full bg-sky-950 rounded-xl gap-5 p-5 my-5" data-aos="fade-right">
-                <div class="flex justify-center items-center w-[300px] rounded-xl">
+            <div class="relative flex w-full bg-sky-950 rounded-xl gap-5 p-5 my-5 max-lg:flex-col" data-aos="fade-right">
+                <div class="flex justify-center items-center w-[300px] h-[200px] rounded-xl max-lg:w-[100%] max-lg:h-[20%]">
                     <!-- <p>{{projectSelected.title}}</p> -->
                     <img [src]="projectSelected.monitor" [alt]="projectSelected.monitor">
                 </div>
-                <div class="flex items-center flex-col gap-5 w-2/3">
+                <div class="flex items-center flex-col gap-5 w-2/3 max-lg:w-full">
                     <h4 class="text-2xl text-white w-full"><strong>Projects :</strong> {{projectSelected.title}}</h4>
                     <p class="text-white w-full">
                         <strong>Description : </strong> {{projectSelected.description}}
                     </p>
                     
-                        <div class="flex justify-between projectSelecteds-center w-full">
+                        <div class="flex justify-between w-full max-md:flex-col">
                             <ul class="flex gap-5 w-full">
                                 @for (tech of projectSelected.technologies; track $index) {
                                     <li class="w-11 h-11 cursor-pointer hover:w-12 hover:h-12" [title]="tech.title">
@@ -78,7 +78,9 @@
                                     </li>
                                 }
                             </ul>
-                            <a class="text-xl w-1/4 text-white font-bold gap-1">
+                            <a class="text-xl w-1/4 text-white font-bold gap-1
+                            max-md:text-right
+                            max-md:w-full">
                                 git repos
                                 <i class="fa-solid fa-arrow-right m-1"></i>
                             </a>

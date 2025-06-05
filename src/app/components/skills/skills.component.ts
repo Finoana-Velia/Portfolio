@@ -45,7 +45,8 @@ export class SkillsComponent implements AfterViewInit,OnInit{
         },
       },
       navigation: true,
-      loop: false,
+      loop: true,
+      autoplay :{ delay: 3000, disableOnInteraction: false }
     });
 
     swiper.initialize();
