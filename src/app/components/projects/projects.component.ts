@@ -14,11 +14,12 @@ export class ProjectsComponent implements OnInit,AfterViewInit{
   
   projects = [
     {
-      title : "Lisiniarivo Clothing and store",
+      title : "Clothing and store",
       background : "Projects/homes/lisiniarivo.png",
       monitor : "Projects/details/lisiniarivo-web.png",
-      description : "C'était mon premier contrat en freelance, la société Lisiniarivo Clothing and store m'a proposer de développer une application permettant de gérer leurs articles, leurs livreurs et leurs commandes mais aussi avec d'autres fonctionnalités supplémentaires comme la gestion de l'authentification et sécurité, l'affichage et la consultation des commandes à partir d'un calendri et enfin l'automatisation des intégration et le déploiement",
-      technologies : [
+      description : "This project is an application for managing delivery items and online orders for a clothing retail company. It also includes other features such as authentication and security, displaying and viewing orders from a calendar, all of which are integrated and deployed automatically.",
+      url : "",
+      technologies: [
         {
           title : "Spring boot",
           logo : "Logos/spring-boot-logo_full.png",
@@ -50,7 +51,8 @@ export class ProjectsComponent implements OnInit,AfterViewInit{
       title : "RestFood and Bakery",
       background : "Projects/homes/restfood&bakery.png",
       monitor : "Projects/details/bakery-web-mobile.png",
-      description : "RestFood & Bakery est une application de restauration permettant au utilisateur de passer des commandes en ligne selon son choix dans le menu, menu qui est géré à parti d'un espace administrateur et sécuriser. RestFood possède aussi une partie mobile en cours de développement permettant aux simple utilisateur d'utiliser leur smartphone comme support que se soit sur android ou sur IOS",
+      description : "RestFood & Bakery is a restaurant application that allows users to place orders online according to their choice from the menu, a menu that is managed from a secure administrator space. RestFood also has a mobile part currently under development that allows ordinary users to use their smartphone as a support whether on Android or IOS.",
+      url : "",
       technologies : [
         {
           title : "Spring boot",
@@ -83,7 +85,8 @@ export class ProjectsComponent implements OnInit,AfterViewInit{
       title : "Gasy Tube",
       background : "Projects/homes/gasytube.png",
       monitor : "Projects/details/gasytube-web-mobile.png",
-      description : "C'est une application permettant de consulter un catalogue de film à partir de son smartphone avec le titre ainsi les acteurs qui y participe Toutes les données sont gérer par une interface web pour effectuer les actions de CRUDs, c'est en développant ce projets que j'ai fait mes premiers pas dans le développement Full Stack",
+      description : "It is an application allowing you to consult a film catalog from your smartphone with the title and the actors who participate in it. All the data is managed by a web interface to carry out CRUD actions.",
+      url : "",
       technologies : [
         {
           title : "Spring boot",
