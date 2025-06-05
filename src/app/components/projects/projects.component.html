@@ -49,9 +49,10 @@
                 </div> -->
             @for (project of projects; track $index) {
                 <div 
-                    class="flex justify-center items-center w-[300px] h-[150px] rounded-xl cursor-pointer" 
+                    class="flex justify-center items-center w-[300px] h-[150px] rounded-xl cursor-pointer card" 
                     (click)="selectProject(project)"
                     data-aos="fade-up"
+                    [attr.data-title]="project.title"
                 >
                     <!-- <p>{{project.title}}</p> -->
                     <img [src]="project.background" [alt]="project.background" class="w-full h-full object-center object-cover rounded-xl">
