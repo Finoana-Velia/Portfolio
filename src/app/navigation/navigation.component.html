@@ -1,6 +1,6 @@
 <nav class="flex justify-center items-center w-full p-5 max-sm:justify-between">
     <div class="w-1/5 z-50">
-        <h1 class="text-3xl text-sky-500 font-bold animate-rtl">VFP</h1>
+        <a href="#" class="text-3xl text-sky-500 font-bold animate-rtl">VFP</a>
     </div>
     <div class="realtive w-4/5 flex justify-between items-center z-50 max-sm:hidden">
         <ul class="flex justify-center items-center gap-5 w-[75%] z-50">
@@ -45,7 +45,61 @@
             </a></li>
         </ul>
     </div>
-    <button class="hidden max-sm:block text-3xl text-white">
-        <i class="fa-solid fa-bars"></i>
+    <button class="hidden max-sm:block text-3xl text-white" (click)="toggleHidden()">
+         @if(!hidden) {
+            <i class="fa-solid fa-bars" data-aos="zoom-in"></i>
+        }@else {
+            <i class="fa-solid fa-times" data-aos="zoom-in"></i>
+        }
     </button>
 </nav>
+<div class="hidden max-sm:block">
+@if(hidden) {
+<div class="relative z-50 duration-300 bg-sky-900" data-aos="fade-down">
+    <ul class="gap-16 p-5">
+        <li class="text-lg my-5">
+            <a href="#about"class="text-xl text-white
+            hover:text-sky-500
+            hover:border-b-2 
+            hover:border-b-sky-500
+            hover:duration-100">About me</a>
+        </li>
+        <li class="text-lg my-5">
+            <a href="#skills" class="text-xl text-white
+            hover:text-sky-500
+            hover:border-b-2 
+            hover:border-b-sky-500
+            hover:duration-100">Skills</a>
+        </li>
+        <li class="text-lg my-5">
+            <a href="#projects" class="text-xl text-white
+            hover:text-sky-500
+            hover:border-b-2 
+           hover:border-b-sky-500
+            hover:duration-100">Projects</a>
+        </li>
+        <li class="text-lg my-5">
+            <a href="#timeline" class="text-xl text-white
+            hover:text-sky-500
+            hover:border-b-2 
+            hover:border-b-sky-500
+            hover:duration-100">Educations</a>
+        </li>
+        <li>
+            <ul class="flex items-center justify-center gap-5 w-[25%] z-50">
+            <li class="animate-ltr"><a class="text-sky-500 text-3xl hover:text-white hover:duration-100">
+                <i class="fa-brands fa-facebook"></i>
+            </a></li>
+            <li class="animate-ltr"><a class="text-sky-500 text-3xl hover:text-white hover:duration-100">
+                <i class="fa-brands fa-linkedin"></i>
+            </a></li>
+            <li class="animate-ltr"><a class="text-sky-500 text-3xl hover:text-white hover:duration-100">
+                <i class="fa-brands fa-github"></i>
+            </a></li>
+    </ul>
+        </li>
+    </ul>
+    
+</div>
+}
+</div>

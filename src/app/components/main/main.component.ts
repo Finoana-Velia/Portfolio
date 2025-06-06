@@ -6,6 +6,7 @@ import { TimelineComponent } from '../timeline/timeline.component';
 import { NavigationComponent } from '../../navigation/navigation.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { ContactComponent } from '../contact/contact.component';
+import { ExperiencesComponent } from '../experiences/experiences.component';
 
 @Component({
   selector: 'app-main',
@@ -14,7 +15,8 @@ import { ContactComponent } from '../contact/contact.component';
     SkillsComponent,
     ProjectsComponent,
     TimelineComponent,
-    ContactComponent
+    ContactComponent,
+    ExperiencesComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
