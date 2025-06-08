@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 
+
 import * as AOS from 'aos';
 
 @Component({
