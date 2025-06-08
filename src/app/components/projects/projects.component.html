@@ -1,7 +1,8 @@
 <section class="relative bg-black z-50 p-10 min-h-screen" id="projects">
     <!-- <div class="relative flex flex-col justify-center items-center z-50 w-full"> -->
     <div class="flex flex-col justify-center items-center w-full"> 
-        <h2 class="text-white text-3xl font-bold opacity-100">Projects</h2>
+        <!-- <h2 class="text-white text-3xl font-bold opacity-100">Projects</h2> -->
+         <h2 class="text-white text-3xl font-bold opacity-100">Projets</h2>
         
         <!-- <div class="relative z-50">
             @for (item of projects; track $index) {
@@ -66,7 +67,11 @@
                     <img [src]="projectSelected.monitor" [alt]="projectSelected.monitor">
                 </div>
                 <div class="flex items-center flex-col gap-5 w-2/3 max-lg:w-full">
-                    <h4 class="text-2xl text-white w-full"><strong>Projects :</strong> {{projectSelected.title}}</h4>
+                    <h4 class="text-2xl text-white w-full">
+                        <!-- <strong>Project :</strong>  -->
+                         <strong>Projet :</strong> 
+                        {{projectSelected.title}}
+                    </h4>
                     <p class="text-white w-full">
                         <strong>Description : </strong> {{projectSelected.description}}
                     </p>
