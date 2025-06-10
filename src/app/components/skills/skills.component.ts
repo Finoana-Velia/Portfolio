@@ -87,8 +87,17 @@ export class SkillsComponent implements AfterViewInit,OnInit{
       logo : "Logos/Git_icon.svg.png",
     },
     {
+      title : "Jenkins",
+      logo : "Logos/icons8-jenkins-144.png",
+    },
+    {
       title : "Docker",
       logo : "Logos/free-docker-logo-icon.png",
     },
+    {
+      title : "kubernetes",
+      logo : "Logos/Kubernetes_logo_without_workmark.svg.png",
+    },
+    
   ]
 }

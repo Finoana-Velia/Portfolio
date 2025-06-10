@@ -14,13 +14,13 @@ export class ProjectsComponent implements OnInit,AfterViewInit{
   
   projects = [
     {
-      title : "Clothing and store",
-      background : "Projects/homes/lisiniarivo.png",
-      monitor : "Projects/details/lisiniarivo-web.png",
-      //description : "This project is an application for managing delivery items and online orders for a clothing retail company. It also includes other features such as authentication and security, displaying and viewing orders from a calendar, all of which are integrated and deployed automatically.",
-      description : "Ce projet est une application de gestion des articles livrés et des commandes en ligne pour une entreprise de vente de vêtements. Elle inclut également d'autres fonctionnalités telles que l'authentification et la sécurité, ainsi que l'affichage et la consultation des commandes à partir d'un calendrier, toutes intégrées et déployées automatiquement.",
+      title : "Gasy Tube",
+      background : "Projects/homes/gasytube.png",
+      monitor : "Projects/details/gasytube-web-mobile.png",
+      //description : "It is an application allowing you to consult a film catalog from your smartphone with the title and the actors who participate in it. All the data is managed by a web interface to carry out CRUD actions.",
+      description : "Il s'agit d'une application permettant de consulter un catalogue de films depuis votre smartphone, avec le titre et les acteurs qui y participent. Toutes les données sont gérées par une interface web pour effectuer des actions CRUD.",
       url : "",
-      technologies: [
+      technologies : [
         {
           title : "Spring boot",
           logo : "Logos/spring-boot-logo_full.png",
@@ -30,25 +30,20 @@ export class ProjectsComponent implements OnInit,AfterViewInit{
           logo : "Logos/angular_icon-logo.png",
         },
         {
-          title : "Tailwind css",
-          logo : "Logos/tailwind-css-logo.png",
+          title : "React Native",
+          logo : "Logos/reactnative-inner.svg",
         },
         {
-          title : "PostgreSQL",
-          logo : "Logos/Postgresql_elephant.svg.png",
+          title : "Mysql",
+          logo : "Logos/free-mysql-logo-icon.webp",
         },
         {
           title : "Git",
           logo : "Logos/Git_icon.svg.png",
         },
-        {
-          title : "Docker",
-          logo : "Logos/free-docker-logo-icon.png",
-        },
       ],
-      repos : "https://github.com/Finoana-Velia/Lisiniarivo-back.git",
+      repos : "https://github.com/Finoana-Velia/Movie.git"
     },
-
     {
       title : "RestFood and Bakery",
       background : "Projects/homes/restfood&bakery.png",
@@ -84,15 +79,14 @@ export class ProjectsComponent implements OnInit,AfterViewInit{
       ],
       repos : "https://github.com/Finoana-Velia/Recipe.git"
     },
-
     {
-      title : "Gasy Tube",
-      background : "Projects/homes/gasytube.png",
-      monitor : "Projects/details/gasytube-web-mobile.png",
-      //description : "It is an application allowing you to consult a film catalog from your smartphone with the title and the actors who participate in it. All the data is managed by a web interface to carry out CRUD actions.",
-      description : "Il s'agit d'une application permettant de consulter un catalogue de films depuis votre smartphone, avec le titre et les acteurs qui y participent. Toutes les données sont gérées par une interface web pour effectuer des actions CRUD.",
+      title : "Clothing and store",
+      background : "Projects/homes/lisiniarivo.png",
+      monitor : "Projects/details/lisiniarivo-web.png",
+      //description : "This project is an application for managing delivery items and online orders for a clothing retail company. It also includes other features such as authentication and security, displaying and viewing orders from a calendar, all of which are integrated and deployed automatically.",
+      description : "Ce projet est une application de gestion des articles livrés et des commandes en ligne pour une entreprise de vente de vêtements. Elle inclut également d'autres fonctionnalités telles que l'authentification et la sécurité, ainsi que l'affichage et la consultation des commandes à partir d'un calendrier, toutes intégrées et déployées automatiquement.",
       url : "",
-      technologies : [
+      technologies: [
         {
           title : "Spring boot",
           logo : "Logos/spring-boot-logo_full.png",
@@ -102,19 +96,23 @@ export class ProjectsComponent implements OnInit,AfterViewInit{
           logo : "Logos/angular_icon-logo.png",
         },
         {
-          title : "React Native",
-          logo : "Logos/reactnative-inner.svg",
+          title : "Tailwind css",
+          logo : "Logos/tailwind-css-logo.png",
         },
         {
-          title : "Mysql",
-          logo : "Logos/free-mysql-logo-icon.webp",
+          title : "PostgreSQL",
+          logo : "Logos/Postgresql_elephant.svg.png",
         },
         {
           title : "Git",
           logo : "Logos/Git_icon.svg.png",
         },
+        {
+          title : "Docker",
+          logo : "Logos/free-docker-logo-icon.png",
+        },
       ],
-      repos : "https://github.com/Finoana-Velia/Movie.git"
+      repos : "https://github.com/Finoana-Velia/Lisiniarivo-back.git",
     },
   ];
 
