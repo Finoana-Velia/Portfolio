@@ -76,43 +76,35 @@ export class ProjectsComponent implements OnInit,AfterViewInit{
           title : "Git",
           logo : "Logos/Git_icon.svg.png",
         },
+        {
+          title : "Docker",
+          logo : "Logos/free-docker-logo-icon.png",
+        },
       ],
       repos : "https://github.com/Finoana-Velia/Recipe.git"
     },
     {
-      title : "Clothing and store",
-      background : "Projects/homes/lisiniarivo.png",
-      monitor : "Projects/details/lisiniarivo-web.png",
+      title : "Book Connect",
+      background : "Projects/details/book-connect.png",
+      monitor : "Projects/details/book-connect.png",
       //description : "This project is an application for managing delivery items and online orders for a clothing retail company. It also includes other features such as authentication and security, displaying and viewing orders from a calendar, all of which are integrated and deployed automatically.",
-      description : "Ce projet est une application de gestion des articles livrés et des commandes en ligne pour une entreprise de vente de vêtements. Elle inclut également d'autres fonctionnalités telles que l'authentification et la sécurité, ainsi que l'affichage et la consultation des commandes à partir d'un calendrier, toutes intégrées et déployées automatiquement.",
+      description : "Cette application mobile innovante permet aux utilisateurs de plonger dans l'univers de la lecture en accédant à une vaste sélection de livres, classés par catégorie. Conçue avec React Native et de Google API Book, elle offre une interface intuitive et conviviale, facilitant la navigation et la découverte de nouvelles lectures. Que vous soyez passionné de fiction, de non-fiction ou de genres spécifiques, cette application vous permet de personnaliser votre expérience de lecture directement depuis votre téléphone. Idéale pour approfondir vos connaissances et enrichir votre bibliothèque personnelle, elle est également un projet que je suis fier de présenter dans mon portfolio.",
       url : "",
       technologies: [
         {
-          title : "Spring boot",
-          logo : "Logos/spring-boot-logo_full.png",
-        },
-        {
-          title : "Angular",
-          logo : "Logos/angular_icon-logo.png",
+          title : "React Native",
+          logo : "Logos/reactnative-inner.svg",
         },
         {
           title : "Tailwind css",
           logo : "Logos/tailwind-css-logo.png",
         },
         {
-          title : "PostgreSQL",
-          logo : "Logos/Postgresql_elephant.svg.png",
-        },
-        {
           title : "Git",
           logo : "Logos/Git_icon.svg.png",
         },
-        {
-          title : "Docker",
-          logo : "Logos/free-docker-logo-icon.png",
-        },
       ],
-      repos : "https://github.com/Finoana-Velia/Lisiniarivo-back.git",
+      repos : "https://github.com/Finoana-Velia/books",
     },
   ];
 
