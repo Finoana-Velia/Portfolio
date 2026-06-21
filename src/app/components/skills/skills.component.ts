@@ -1,12 +1,16 @@
 import { NgForOf } from '@angular/common';
 import { AfterViewInit, Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 import * as AOS from 'aos';
 
 
 @Component({
   selector: 'app-skills',
-  imports: [NgForOf],
+  imports: [
+    NgForOf,
+    TranslatePipe
+  ],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css',
   schemas : [CUSTOM_ELEMENTS_SCHEMA]

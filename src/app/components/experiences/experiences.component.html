@@ -1,113 +1,35 @@
 <section class="relative z-50 p-10" id="experiences">
     <div class="flex flex-col w-full">
         <!-- <h2 class="text-white text-3xl font-bold text-center">Experiences</h2> -->
-         <h2 class="text-white text-3xl font-bold text-center">Expériences</h2>
-         <div class="px-10 flex w-full my-5 py-5 bg-sky-900 max-lg:flex-col max-lg:flex-wrap" data-aos="fade-up">
-            <h3 class="text-white w-1/4 mt-2 max-lg:w-full" data-aos="fade-right">Sept 2025 - En cours</h3>
-            <div class="w-3/4 flex flex-col gap-2 max-lg:w-full" data-aos="fade-right">
-                <h4 class="text-white font-bold text-xl">Développeur Java - Chez Linkeo</h4>
-                <p class="text-white">
-                    Développement backend Java<i class="fa-solid fa-circle-dot ml-1"></i>
-                    Création d'API REST + interface web<i class="fa-solid fa-circle-dot ml-1"></i>
-                    Maintenance, performance, correction d'anomalie<i class="fa-solid fa-circle-dot ml-1"></i>
-                    Amélioration des performances appliquatives SQL<i class="fa-solid fa-circle-dot ml-1"></i>
-                    Participation aux choix techniques et évolution vers les microservices<i class="fa-solid fa-circle-dot ml-1"></i>
-                    Collaboration sur les code review, CI/CD et Documentation technique
-                </p>
-                <div class="flex flex-wrap w-full gap-2">
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Spring boot</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Apache Tapestry</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Mysql / Maria DB</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Htmx</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Git</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Bitbicket Pipelines</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Jenkins</p>
+         <h2 class="text-white text-3xl font-bold text-center">{{ 'EXPERIENCE' | translate }}</h2>
+         @for (item of experiences; track $index) {
+            <div class="px-10 flex w-full my-5 py-5 bg-sky-900 max-lg:flex-col max-lg:flex-wrap" data-aos="fade-up">
+                <h3 class="text-white w-1/4 mt-2 max-lg:w-full" data-aos="fade-right">{{item.begin}} - {{item.end | translate}}</h3>
+                <div class="w-3/4 flex flex-col gap-2 max-lg:w-full" data-aos="fade-right">
+                    <h4 class="text-white font-bold text-xl">{{item.title | translate}} - {{item.company}}</h4>
+                    <p class="text-white">{{ item.description | translate}}</p>
+                    <!-- <p class="text-white">
+                        Développement backend Java<i class="fa-solid fa-circle-dot ml-1"></i>
+                        Création d'API REST + interface web<i class="fa-solid fa-circle-dot ml-1"></i>
+                        Maintenance, performance, correction d'anomalie<i class="fa-solid fa-circle-dot ml-1"></i>
+                        Amélioration des performances appliquatives SQL<i class="fa-solid fa-circle-dot ml-1"></i>
+                        Participation aux choix techniques et évolution vers les microservices<i class="fa-solid fa-circle-dot ml-1"></i>
+                        Collaboration sur les code review, CI/CD et Documentation technique
+                    </p> -->
+                    <div class="flex flex-wrap w-full gap-2">
+                        @for (tech of item.techs; track $index) {
+                            <p class="p-1 text-sky-950 bg-sky-800 rounded">{{tech}}</p>
+                        }
+                        <!-- <p class="p-1 text-sky-950 bg-sky-800 rounded">Spring boot</p>
+                        <p class="p-1 text-sky-950 bg-sky-800 rounded">Apache Tapestry</p>
+                        <p class="p-1 text-sky-950 bg-sky-800 rounded">Mysql / Maria DB</p>
+                        <p class="p-1 text-sky-950 bg-sky-800 rounded">Htmx</p>
+                        <p class="p-1 text-sky-950 bg-sky-800 rounded">Git</p>
+                        <p class="p-1 text-sky-950 bg-sky-800 rounded">Bitbicket Pipelines</p>
+                        <p class="p-1 text-sky-950 bg-sky-800 rounded">Jenkins</p> -->
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="px-10 flex w-full my-5 py-5 bg-sky-900 max-lg:flex-col max-lg:flex-wrap" data-aos="fade-up">
-            <h3 class="text-white w-1/4 mt-2 max-lg:w-full" data-aos="fade-right">Mai 2025 - Juil 2025</h3>
-            <div class="w-3/4 flex flex-col gap-2 max-lg:w-full" data-aos="fade-right">
-                <h4 class="text-white font-bold text-xl">Développeur Java - Freelance</h4>
-                <p class="text-white">
-                    Réalisation d'application web<i class="fa-solid fa-circle-dot ml-1"></i>
-                    Réalisation de tests untaires<i class="fa-solid fa-circle-dot ml-1"></i>
-                    Conception et développement d'API REST<i class="fa-solid fa-circle-dot ml-1"></i>
-                    Intégration de base de données relationnelles<i class="fa-solid fa-circle-dot ml-1"></i>
-                    Elaboration de pipeline pour l'intégration et déploiement en continu<i class="fa-solid fa-circle-dot ml-1"></i>
-                    Déploiement d'application sur des serveurs<i class="fa-solid fa-circle-dot ml-1"></i>
-                    Correction et débogage des applications
-                </p>
-                <div class="flex flex-wrap w-full gap-2">
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Spring boot</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Angular</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">PostgreSQL</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Git</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Github actions</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Docker</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="px-10 flex w-full my-5 py-5 bg-sky-900 max-lg:flex-col max-lg:flex-wrap" data-aos="fade-up">
-            <h3 class="text-white w-1/4 mt-2 max-lg:w-full" data-aos="fade-right">Août 2023 - Septembre 2024</h3>
-            <div class="w-3/4 flex flex-col gap-2 max-lg:w-full" data-aos="fade-right">
-                <h4 class="text-white font-bold text-xl">Développeur Java/Angular- Madagascar Information Technology (MDG-IT)</h4>
-                <p class="text-white">
-                    Participation à la conception, au développement et à la maintenance d'application<i class="fa-solid fa-circle-dot mx-1"></i>
-                    Amélioration des performances et revue de code<i class="fa-solid fa-circle-dot mx-1"></i>
-                    Diriger une équipe de stagiaire<i class="fa-solid fa-circle-dot mx-1"></i>
-                    Développement de plusiseurs fonctionnalités<i class="fa-solid fa-circle-dot mx-1"></i>
-                    Réalisation des tests unitaires et des vérifications<i class="fa-solid fa-circle-dot mx-1"></i>
-                    Réalisation des corrections rapportées par le client<i class="fa-solid fa-circle-dot mx-1"></i>
-                    Participation au déploiement d'applications<i class="fa-solid fa-circle-dot mx-1"></i>
-                    Participation à la rédactions des différents documents
-                </p>
-                <div class="flex flex-wrap w-full gap-2">
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Spring boot</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Angular</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">PostgreSQL</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Bootstrap</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Git</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="px-10 flex w-full my-5 py-5 bg-sky-900 max-lg:flex-col max-lg:flex-wrap" data-aos="fade-up">
-            <h3 class="text-white w-1/4 mt-2 max-lg:w-full" data-aos="fade-right">Février 2023 - Août 2023</h3>
-            <div class="w-3/4 flex flex-col gap-2 max-lg:w-full" data-aos="fade-right">
-                <h4 class="text-white font-bold text-xl">Stagiaire développeur Java - Madagascar Information Technology (MDG-IT)</h4>
-                <p class="text-white">
-                    Conception et développement d'application de gestion des ressources humaines
-                </p>
-                <div class="flex flex-wrap gap-2 w-full">
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Spring boot</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Angular</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Angular material</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">PostgreSQL</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Git</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="px-10 flex w-full my-5 py-5 bg-sky-900 max-lg:flex-col max-lg:flex-wrap" data-aos="fade-up">
-            <h3 class="text-white w-1/4 mt-2 max-lg:w-full" data-aos="fade-right">Juin 2020 - Septembre 2020</h3>
-            <div class="w-3/4 flex flex-col gap-2 max-lg:w-full" data-aos="fade-right">
-                <h4 class="text-white font-bold text-xl">Stage développeur web - Antananarivo University</h4>
-                <p class="text-white">
-                    Développement d'application web pour digitaliser le service central du personnel administratif et technique (P.A.T) ainsi
-                    que le personnel enseignant (P.E) de l'Université d'Antananarivo
-                </p>
-                <div class="flex flex-wrap gap-2 w-full">
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">CodeIngter 3</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">HTML 5</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">CSS 3</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Javascript</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">JQuery</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Mysql</p>
-                    <p class="p-1 text-sky-950 bg-sky-800 rounded">Git</p>
-                </div>
-            </div>
-        </div>
+         }
     </div>
 </section>

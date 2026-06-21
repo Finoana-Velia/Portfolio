@@ -1,6 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MainComponent } from './components/main/main.component';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -14,4 +15,9 @@ import { MainComponent } from './components/main/main.component';
 })
 export class AppComponent {
   title = 'Portfolio';
+
+   constructor(private translate: TranslateService) {
+    this.translate.setFallbackLang('fr');
+    this.translate.use(localStorage.getItem('lang') ?? 'fr');
+  }
 }

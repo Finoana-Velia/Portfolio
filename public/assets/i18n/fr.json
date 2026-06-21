@@ -1,0 +1,32 @@
+{
+    "SKILLS" : "Compétences",
+    "PROJECTS" : "Projets",
+    "EXPERIENCE" : "Expériences",
+    "CONTACT" : "Contact",
+
+    "FULL-STACK-DEV" : "Développeur FullStack",
+    "DESCRIPTION" : "Passionné de technologie et fasciné par les nouvelles innovations, je suis un développeur Full Stack toujours prêt à relever de nouveaux défis.",
+    "DOWNLOAD" : "Télécharger CV",
+
+    "GASY_TUBE" : "Il s'agit d'une application permettant de consulter un catalogue de films depuis votre smartphone, avec le titre et les acteurs qui y participent. Toutes les données sont gérées par une interface web pour effectuer des actions CRUD.",
+    "REST_FOOD" : "RestFood & Bakery est une application de restauration permettant aux utilisateurs de commander en ligne selon leur choix à la carte, gérée depuis un espace administrateur sécurisé. RestFood propose également une version mobile en cours de développement permettant aux utilisateurs d'utiliser leur smartphone, qu'il soit sous Android ou iOS.",
+    "BOOK" : "Cette application mobile innovante permet aux utilisateurs de plonger dans l'univers de la lecture en accédant à une vaste sélection de livres, classés par catégorie. Conçue avec React Native et de Google API Book, elle offre une interface intuitive et conviviale, facilitant la navigation et la découverte de nouvelles lectures. Que vous soyez passionné de fiction, de non-fiction ou de genres spécifiques, cette application vous permet de personnaliser votre expérience de lecture directement depuis votre téléphone. Idéale pour approfondir vos connaissances et enrichir votre bibliothèque personnelle, elle est également un projet que je suis fier de présenter dans mon portfolio.",
+
+    "GIT_REPOS" : "Repos git",
+    "EN_COURS" : "En cours",
+
+    "DEV_JAVA" : "Développeur Java",
+    "DEV_JAVA/ANGULAR" : "Développeur Java/Angular",
+
+    "LINKEO" : "Développement backend Java - Création d'API REST + interface web - Maintenance performance, correction d'anomalie - Amélioration des performances appliquatives SQL - Participation aux choix techniques et évolution vers les microservices - Collaboration sur les code review, CI/CD et Documentation technique",
+    "FREELENCE" : "Réalisation d'application web - Réalisation de tests untaires - Conception et développement d'API REST - Intégration de base de données relationnelles - Elaboration de pipeline pour l'intégration et déploiement en continu - Déploiement d'application sur des serveurs - Correction et débogage des applications",
+    "MDGIT" : "Participation à la conception, au développement et à la maintenance d'application - Amélioration des performances et revue de code - Diriger une équipe de stagiaire - Développement de plusiseurs fonctionnalités - Réalisation des tests unitaires et des vérifications - Réalisation des corrections rapportées par le client - Participation au déploiement d'applications - Participation à la rédactions des différents documents",
+    "STAGE_1" : "Conception et développement d'application de gestion des ressources humaines",
+    "INTERN_1" : "Stage développeur Java",
+    "STAGE_2" : "Développement d'application web pour digitaliser le service central du personnel administratif et technique (P.A.T) ainsi que le personnel enseignant (P.E) de l'Université d'Antananarivo",
+    "INTERN_2" : "Stage développeur web",
+    "PARCOURS" : "Parcours",
+    
+    "CONTACT_ME" : "Contacter moi"
+
+}

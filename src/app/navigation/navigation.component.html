@@ -21,42 +21,42 @@
                 hover:text-sky-500
                 hover:border-b-2 
                 hover:border-b-sky-500
-                hover:duration-100">Compétences</a>
+                hover:duration-100">{{ 'SKILLS' | translate }}</a>
             </li>
             <li class="animate-ttb">
-                <!-- <a href="#projects" class="text-xl text-white
-                hover:text-sky-500
-                hover:border-b-2 
-                hover:border-b-sky-500
-                hover:duration-100">Projects</a> -->
                 <a href="#projects" class="text-xl text-white
                 hover:text-sky-500
                 hover:border-b-2 
                 hover:border-b-sky-500
-                hover:duration-100">Projets</a>
+                hover:duration-100">{{ 'PROJECTS' | translate }}</a>
             </li>
             <li class="animate-btt">
-                <!-- <a href="#timeline" class="text-xl text-white
-                hover:text-sky-500
-                hover:border-b-2 
-                hover:border-b-sky-500
-                hover:duration-100">Educations</a> -->
                 <a href="#experiences" class="text-xl text-white
                 hover:text-sky-500
                 hover:border-b-2 
                 hover:border-b-sky-500
-                hover:duration-100">Expériences</a>
+                hover:duration-100">{{ 'EXPERIENCE' | translate }}</a>
             </li>
             <li class="animate-btt">
                 <a href="#contact" class="text-xl text-white
                 hover:text-sky-500
                 hover:border-b-2 
                 hover:border-b-sky-500
-                hover:duration-100">Contact</a>
+                hover:duration-100">{{ 'CONTACT' | translate }}</a>
             </li>
         </ul>
-        <ul class="flex items-center justify-center gap-5 w-[25%] z-50">
-            <li class="animate-ltr"><a
+        <div class="flex justify-center items-center gap-2 bg-transparent border-2 border-sky-500 p-1 rounded-full">
+            <i class="fa fa-globe text-sky-500"></i>
+            <select class="w-full text-sky-500">
+                <option (click)="switchLanguage('en')">EN</option>
+                <option (click)="switchLanguage('fr')">FR</option>
+            </select>
+        </div>
+        <!-- <ul class="flex items-center justify-center gap-5 w-[25%] z-50">
+
+            <button (click)="switchLanguage('fr')">FR</button>
+            <button (click)="switchLanguage('en')">EN</button>-->
+            <!-- <li class="animate-ltr"><a
                 href="https://www.facebook.com/finoanapatrick.andriakotoharisonvelia/" 
                 class="text-sky-500 text-3xl hover:text-white hover:duration-100">
                 <i class="fa-brands fa-facebook"></i>
@@ -70,8 +70,8 @@
                 href="https://github.com/Finoana-Velia"
                 class="text-sky-500 text-3xl hover:text-white hover:duration-100">
                 <i class="fa-brands fa-github"></i>
-            </a></li>
-        </ul>
+            </a></li> -->
+        <!-- </ul> -->
     </div>
     <button class="hidden max-sm:block text-3xl text-white" (click)="toggleHidden()">
          @if(!hidden) {
@@ -95,7 +95,7 @@
                 hover:text-sky-500
                 hover:border-b-2 
                 hover:border-b-sky-500
-                hover:duration-100">Compétences</a>
+                hover:duration-100">{{ 'SKILLS' | translate }}</a>
         </li>
         <li class="text-lg my-5">
             <!-- <a href="#skills" class="text-xl text-white
@@ -107,7 +107,7 @@
                 hover:text-sky-500
                 hover:border-b-2 
                 hover:border-b-sky-500
-                hover:duration-100">Projets</a>
+                hover:duration-100">{{ 'PROJECTS' | translate }}</a>
         </li>
         <li class="text-lg my-5">
             <!-- <a href="#projects" class="text-xl text-white
@@ -119,7 +119,7 @@
                 hover:text-sky-500
                 hover:border-b-2 
                 hover:border-b-sky-500
-                hover:duration-100">Expériences</a>
+                hover:duration-100">{{ 'EXPERIENCE' | translate }}</a>
         </li>
         <li class="text-lg my-5">
             <!-- <a href="#timeline" class="text-xl text-white
@@ -131,27 +131,15 @@
                 hover:text-sky-500
                 hover:border-b-2 
                 hover:border-b-sky-500
-                hover:duration-100">Contact</a>
+                hover:duration-100">{{ 'CONTACT' | translate }}</a>
         </li>
-        <li>
-            <ul class="flex items-center justify-center gap-5 w-[25%] z-50">
-            <li class="animate-ltr"><a
-                href="https://www.facebook.com/finoanapatrick.andriakotoharisonvelia/" 
-                class="text-sky-500 text-3xl hover:text-white hover:duration-100">
-                <i class="fa-brands fa-facebook"></i>
-            </a></li>
-            <li class="animate-ltr"><a 
-                href="https://www.linkedin.com/in/finoana-patrick-velia-23a4451a6/"
-                class="text-sky-500 text-3xl hover:text-white hover:duration-100">
-                <i class="fa-brands fa-linkedin"></i>
-            </a></li>
-            <li class="animate-ltr"><a 
-                href="https://github.com/Finoana-Velia"
-                class="text-sky-500 text-3xl hover:text-white hover:duration-100">
-                <i class="fa-brands fa-github"></i>
-            </a></li>
-    </ul>
-        </li>
+        <div class="flex justify-center items-center gap-2 bg-transparent border-2 border-sky-500 p-1 rounded-full">
+            <i class="fa fa-globe text-sky-500"></i>
+            <select class="w-full text-sky-500">
+                <option (click)="switchLanguage('en')">EN</option>
+                <option (click)="switchLanguage('fr')">FR</option>
+            </select>
+        </div>
     </ul>
     
 </div>

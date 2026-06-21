@@ -1,0 +1,33 @@
+{
+    "SKILLS" : "Skills",
+    "PROJECTS" : "Projects",
+    "EXPERIENCE" : "Experience",
+    "CONTACT" : "Contact",
+
+    "FULL-STACK-DEV" : "FullStack Developer",
+    "DESCRIPTION" : "Passionate about technology and fascinated by new innovations, I am a Full Stack developer always ready to take on new challenges.",
+    "DOWNLOAD" : "Download Resume",
+
+    "GASY_TUBE" : "This is an application that allows you to browse a movie catalog from your smartphone, with the title and participating actors. All data is managed through a web interface to perform CRUD operations.",
+    "REST_FOOD" : "RestFood & Bakery is a restaurant application that allows users to order online from an à la carte menu, managed through a secure admin panel. RestFood also offers a mobile version currently in development, enabling users to place orders from their smartphone, whether on Android or iOS.",
+    "BOOK" : "This innovative mobile application allows users to dive into the world of reading by accessing a vast selection of books, sorted by category. Built with React Native and the Google Books API, it offers an intuitive and user-friendly interface, making navigation and discovery of new reads easy. Whether you are passionate about fiction, non-fiction, or specific genres, this app lets you personalize your reading experience directly from your phone. Ideal for expanding your knowledge and enriching your personal library, it is also a project I am proud to showcase in my portfolio.",
+
+    "GIT_REPOS" : "Git Repos",
+    "EN_COURS" : "Present",
+
+    "DEV_JAVA" : "Java Developer",
+    "DEV_JAVA/ANGULAR" : "Java/Angular Developer",
+
+
+    "LINKEO" : "Java backend development — REST API creation + web interface — Maintenance, performance tuning, bug fixing — SQL application performance improvement — Participation in technical decisions and migration toward microservices — Collaboration on code reviews, CI/CD and technical documentation",
+    "FREELENCE" : "Web application development — Unit testing — REST API design and development — Relational database integration — CI/CD pipeline setup — Application deployment on servers — Bug fixing and debugging",
+    "MDGIT" : "Participation in the design, development and maintenance of applications — Performance improvement and code review — Leading an intern team — Development of multiple features — Unit testing and verification — Fixing bugs reported by the client — Participation in application deployment — Contribution to various technical documentation",
+    "STAGE_1" : "Design and development of a human resources management application",
+    "INTERN_1" : "Java Developer Intern",
+    "STAGE_2" : "Development of a web application to digitize the central administrative and technical staff (P.A.T) and teaching staff (P.E) management service at the University of Antananarivo",
+    "INTERN_2" : "Web Developer Intern",
+    "PARCOURS" : "Background",
+    
+    "CONTACT_ME" : "Contact me"
+
+}
