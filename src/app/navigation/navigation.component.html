@@ -45,33 +45,13 @@
                 hover:duration-100">{{ 'CONTACT' | translate }}</a>
             </li>
         </ul>
-        <div class="flex justify-center items-center gap-2 bg-transparent border-2 border-sky-500 p-1 rounded-full">
+        <div class="flex justify-center items-center gap-2 bg-transparent border-2 border-sky-500 p-1 rounded-full cursor-pointer">
             <i class="fa fa-globe text-sky-500"></i>
-            <select class="w-full text-sky-500">
+            <select class="w-full text-sky-500 cursor-pointer">
                 <option (click)="switchLanguage('en')">EN</option>
                 <option (click)="switchLanguage('fr')">FR</option>
             </select>
         </div>
-        <!-- <ul class="flex items-center justify-center gap-5 w-[25%] z-50">
-
-            <button (click)="switchLanguage('fr')">FR</button>
-            <button (click)="switchLanguage('en')">EN</button>-->
-            <!-- <li class="animate-ltr"><a
-                href="https://www.facebook.com/finoanapatrick.andriakotoharisonvelia/" 
-                class="text-sky-500 text-3xl hover:text-white hover:duration-100">
-                <i class="fa-brands fa-facebook"></i>
-            </a></li>
-            <li class="animate-ltr"><a 
-                href="https://www.linkedin.com/in/finoana-patrick-velia-23a4451a6/"
-                class="text-sky-500 text-3xl hover:text-white hover:duration-100">
-                <i class="fa-brands fa-linkedin"></i>
-            </a></li>
-            <li class="animate-ltr"><a 
-                href="https://github.com/Finoana-Velia"
-                class="text-sky-500 text-3xl hover:text-white hover:duration-100">
-                <i class="fa-brands fa-github"></i>
-            </a></li> -->
-        <!-- </ul> -->
     </div>
     <button class="hidden max-sm:block text-3xl text-white" (click)="toggleHidden()">
          @if(!hidden) {

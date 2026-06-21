@@ -1,11 +1,12 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 
 import * as AOS from 'aos';
 
 @Component({
   selector: 'app-contact',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
