@@ -11,12 +11,17 @@ import * as AOS from 'aos';
 })
 export class NavigationComponent implements AfterViewInit,OnInit{
 
+  
   constructor(private translate: TranslateService) {
   }
 
-  switchLanguage(lang: string) {
+  currentLang = localStorage.getItem('lang') ?? 'fr';
+
+  switchLanguage(event: Event) {
+    const lang = (event.target as HTMLSelectElement).value;
     this.translate.use(lang);
-    localStorage.setItem("lang", lang);
+    localStorage.setItem('lang', lang);
+    this.currentLang = lang;
   }
 
 

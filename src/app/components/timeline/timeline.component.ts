@@ -68,8 +68,11 @@ export class TimelineComponent implements AfterViewInit,OnInit{
     AOS.refresh();
   }
 
-  getMounthYear(date : Date | string) {
-    const locale = localStorage.getItem('lang') ?? 'fr';
+  getMounthYear(date: Date | string): string {
+    const lang = localStorage.getItem('lang');
+    const supportedLocales = ['fr', 'en'];
+    const locale = supportedLocales.includes(lang ?? '') ? lang! : 'en';
+
     return formatDate(date, 'MMM y', locale);
   }
 

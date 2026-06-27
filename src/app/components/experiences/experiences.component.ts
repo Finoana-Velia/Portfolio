@@ -65,11 +65,11 @@ export class ExperiencesComponent implements OnInit, AfterViewInit{
     ]
   }
 
-  getMounthYear(date : Date | string | null | undefined) {
-    const locale = localStorage.getItem('lang') ?? 'fr';
-    if(!date) {
-      return this.translate.instant("EN_COURS");
-    }
+  getMounthYear(date: Date | string): string {
+    const lang = localStorage.getItem('lang');
+    const supportedLocales = ['fr', 'en'];
+    const locale = supportedLocales.includes(lang ?? '') ? lang! : 'en';
+
     return formatDate(date, 'MMM y', locale);
   }
 

@@ -4,19 +4,7 @@
     </div>
     <div class="realtive w-4/5 flex justify-between items-center z-50 max-sm:hidden">
         <ul class="flex justify-center items-center gap-5 w-[75%] z-50">
-            <!-- <li class="animate-ttb">
-                <a href="#about"class="text-xl text-white
-                hover:text-sky-500
-                hover:border-b-2 
-                hover:border-b-sky-500
-                hover:duration-100">About me</a>
-            </li> -->
             <li class="animate-btt">
-                <!-- <a href="#skills" class="text-xl text-white
-                hover:text-sky-500
-                hover:border-b-2 
-                hover:border-b-sky-500
-                hover:duration-100">Skills</a> -->
                 <a href="#skills" class="text-xl text-white
                 hover:text-sky-500
                 hover:border-b-2 
@@ -45,11 +33,14 @@
                 hover:duration-100">{{ 'CONTACT' | translate }}</a>
             </li>
         </ul>
-        <div class="flex justify-center items-center gap-2 bg-transparent border-2 border-sky-500 p-1 rounded-full cursor-pointer">
+        <div class="flex justify-between items-center gap-2 bg-transparent border-2 border-sky-500 p-1 rounded-full cursor-pointer">
             <i class="fa fa-globe text-sky-500"></i>
-            <select class="w-full text-sky-500 cursor-pointer">
-                <option (click)="switchLanguage('en')">EN</option>
-                <option (click)="switchLanguage('fr')">FR</option>
+            <select 
+                class="w-full text-sky-500 cursor-pointer border-none outline-none appearance-none bg-transparent"
+                [value]="currentLang"
+                (change)="switchLanguage($event)">
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
             </select>
         </div>
     </div>
@@ -115,9 +106,12 @@
         </li>
         <div class="flex justify-center items-center gap-2 bg-transparent border-2 border-sky-500 p-1 rounded-full">
             <i class="fa fa-globe text-sky-500"></i>
-            <select class="w-full text-sky-500">
-                <option (click)="switchLanguage('en')">EN</option>
-                <option (click)="switchLanguage('fr')">FR</option>
+           <select 
+                class="w-full text-sky-500 cursor-pointer border-none outline-none"
+                [value]="currentLang"
+                (change)="switchLanguage($event)">
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
             </select>
         </div>
     </ul>
